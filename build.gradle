@@ -19,8 +19,15 @@ subprojects {
     repositories {
         mavenCentral()
         maven {
-        url 'https://global.repo.jmix.io/repository/public'
-    }
+            url 'https://global.repo.jmix.io/repository/public'
+        }
+        maven {
+            url = 'https://global.repo.jmix.io/repository/premium'
+            credentials {
+                username = rootProject['premiumRepoUser']
+                password = rootProject['premiumRepoPass']
+            }
+        }
     }
 
     jmix {

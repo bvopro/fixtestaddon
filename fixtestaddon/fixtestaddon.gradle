@@ -28,8 +28,16 @@ dependencies {
     testImplementation 'org.junit.platform:junit-platform-suite:1.9.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testImplementation 'me.jvt.cucumber:reporting-plugin:7.3.0'
+    api 'io.jmix.maps:jmix-maps-ui-starter'
+    api 'io.jmix.ui:jmix-ui-widgets'
+    api 'io.jmix.maps:jmix-maps-ui-widgets'
+    api 'io.jmix.maps:jmix-maps-starter'
 }
 
 test {
     useJUnitPlatform()
+}
+
+compileWidgets {
+    generate "com.company.fixtestaddon.widgets.CustomWidgetSet"
 }
