@@ -6,7 +6,5 @@ import org.springframework.context.annotation.Import
 
 @AutoConfiguration
 @Import(FixTestConfiguration::class)
-open class FixTestAutoConfiguration {
-
-}
+open class FixTestAutoConfiguration
 

@@ -3,6 +3,9 @@ package com.company.fixtestaddon
 import io.jmix.core.annotation.JmixModule
 import io.jmix.core.impl.scanning.AnnotationScanMetadataReaderFactory
 import io.jmix.eclipselink.EclipselinkConfiguration
+import io.jmix.security.SecurityConfiguration
+import io.jmix.securitydata.SecurityDataConfiguration
+import io.jmix.securityui.SecurityUiConfiguration
 import io.jmix.ui.UiConfiguration
 import io.jmix.ui.sys.ActionsConfiguration
 import io.jmix.ui.sys.UiControllersConfiguration
@@ -16,7 +19,7 @@ import org.springframework.context.annotation.PropertySource
 @Configuration
 @ComponentScan
 @ConfigurationPropertiesScan
-@JmixModule(dependsOn = [EclipselinkConfiguration::class, UiConfiguration::class])
+@JmixModule(dependsOn = [EclipselinkConfiguration::class, UiConfiguration::class, SecurityConfiguration::class, SecurityUiConfiguration::class, SecurityDataConfiguration::class])
 @PropertySource(name = "com.company.fixtestaddon", value = ["classpath:/com/company/fixtestaddon/module.properties"])
 open class FixTestConfiguration {
 

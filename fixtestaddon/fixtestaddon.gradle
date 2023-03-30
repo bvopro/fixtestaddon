@@ -16,6 +16,18 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-web'
 
     testRuntimeOnly 'org.hsqldb:hsqldb'
+
+    //security
+    implementation 'io.jmix.security:jmix-security-starter'
+    implementation 'io.jmix.security:jmix-security-ui-starter'
+    implementation 'io.jmix.security:jmix-security-data-starter'
+    // cucumber
+    implementation 'io.cucumber:cucumber-java:7.11.1'
+    testImplementation 'io.cucumber:cucumber-spring:7.11.1'
+    testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.11.1'
+    testImplementation 'org.junit.platform:junit-platform-suite:1.9.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testImplementation 'me.jvt.cucumber:reporting-plugin:7.3.0'
 }
 
 test {

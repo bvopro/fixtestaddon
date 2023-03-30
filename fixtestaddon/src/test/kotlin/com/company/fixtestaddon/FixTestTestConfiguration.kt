@@ -19,10 +19,8 @@ class FixTestTestConfiguration {
 
     @Bean
     @Primary
-    fun dataSource(): DataSource {
-        return EmbeddedDatabaseBuilder()
-            .generateUniqueName(true)
-            .setType(EmbeddedDatabaseType.HSQL)
-            .build();
-    }
+    fun dataSource() = EmbeddedDatabaseBuilder()
+        .generateUniqueName(true)
+        .setType(EmbeddedDatabaseType.HSQL)
+        .build()
 }
