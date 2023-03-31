@@ -30,6 +30,9 @@ dependencies {
     testImplementation 'me.jvt.cucumber:reporting-plugin:7.3.0'
     api 'io.jmix.appsettings:jmix-appsettings-starter'
     api 'io.jmix.appsettings:jmix-appsettings-ui-starter'
+    api 'io.jmix.reports:jmix-reports-ui-starter'
+    api 'io.jmix.reports:jmix-reports-rest-starter'
+    api 'io.jmix.reports:jmix-reports-starter'
 }
 
 test {

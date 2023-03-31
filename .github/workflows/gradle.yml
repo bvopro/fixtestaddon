@@ -9,9 +9,9 @@ name: Java CI with Gradle for branche cucumber
 
 on:
   push:
-    branches: [ "cucumber" ]
+    branches: [ "cucumber-reports" ]
   pull_request:
-    branches: [ "cucumber" ]
+    branches: [ "cucumber-reports" ]
 
 permissions:
   contents: read
