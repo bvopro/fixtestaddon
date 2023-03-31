@@ -28,6 +28,8 @@ dependencies {
     testImplementation 'org.junit.platform:junit-platform-suite:1.9.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testImplementation 'me.jvt.cucumber:reporting-plugin:7.3.0'
+    api 'io.jmix.appsettings:jmix-appsettings-starter'
+    api 'io.jmix.appsettings:jmix-appsettings-ui-starter'
 }
 
 test {
