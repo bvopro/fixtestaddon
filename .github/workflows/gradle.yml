@@ -9,9 +9,9 @@ name: Java CI with Gradle for branche cucumber
 
 on:
   push:
-    branches: [ "cucumber-reports" ]
+    branches: [ "metaclass-not-found" ]
   pull_request:
-    branches: [ "cucumber-reports" ]
+    branches: [ "metaclass-not-found" ]
 
 permissions:
   contents: read

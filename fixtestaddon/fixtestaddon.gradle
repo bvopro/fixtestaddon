@@ -33,6 +33,8 @@ dependencies {
     api 'io.jmix.reports:jmix-reports-ui-starter'
     api 'io.jmix.reports:jmix-reports-rest-starter'
     api 'io.jmix.reports:jmix-reports-starter'
+    // kotlin
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")
 }
 
 test {
